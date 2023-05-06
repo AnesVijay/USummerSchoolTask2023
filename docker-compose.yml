@@ -1,0 +1,16 @@
+version: '2'
+
+services:
+# 'index.php' configuration
+  php:
+    image: php:8.2-fpm
+    volumes:
+      - './src:/var/www/html'
+# 'nginx' configuration
+  nginx:
+    image: nginx
+    ports:
+      - "8080:80"
+    volumes:
+      - './src:/var/www/html'
+      - './docker/nginx/conf.d:/etc/nginx/conf.d'
