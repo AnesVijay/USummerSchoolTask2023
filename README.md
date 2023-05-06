@@ -9,7 +9,7 @@ https://docs.docker.com/engine/install/ubuntu/
 1. Go to the folder where you have all files from this repository to pull required images, build application image and then create and run a container:
 ```sudo docker compose up -d``` 
 > - we use Docker compose of version 2
-> - option '-d' meanes 'detached', for starting your container at the background)
+> - option '-d' meanes 'detached', for starting your container at the background
 
 2. **Profit!** Now the container is working in docker!
 You can see nginx welcome page with ```localhost:8080``` and index.php page with ```localhost:8080/index.php```. 
